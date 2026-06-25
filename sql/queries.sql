@@ -1,12 +1,9 @@
--- Top 5 funds by AUM
 
 SELECT *
 FROM fact_aum
 ORDER BY aum DESC
 LIMIT 5;
 
-
--- Average NAV per month
 
 SELECT
 strftime('%Y-%m', full_date) AS month,
@@ -17,7 +14,6 @@ ON fn.date_id = dd.date_id
 GROUP BY month;
 
 
--- SIP YoY Growth
 
 SELECT
 year,
@@ -29,8 +25,6 @@ WHERE transaction_type='SIP'
 GROUP BY year;
 
 
--- Transactions by state
-
 SELECT
 state,
 COUNT(*) AS total_transactions
@@ -38,14 +32,12 @@ FROM fact_transactions
 GROUP BY state;
 
 
--- Funds expense ratio below 1
 
 SELECT *
 FROM fact_performance
 WHERE expense_ratio < 1;
 
 
--- Highest 1Y returns
 
 SELECT *
 FROM fact_performance
@@ -53,13 +45,11 @@ ORDER BY return_1y DESC
 LIMIT 10;
 
 
--- Average expense ratio
 
 SELECT AVG(expense_ratio)
 FROM fact_performance;
 
 
--- Monthly transaction volume
 
 SELECT
 month,
@@ -70,7 +60,6 @@ ON ft.date_id = dd.date_id
 GROUP BY month;
 
 
--- Category wise AUM
 
 SELECT
 category,
@@ -81,7 +70,6 @@ ON fa.fund_id = df.fund_id
 GROUP BY category;
 
 
--- Redemption amount by fund
 
 SELECT
 fund_id,
