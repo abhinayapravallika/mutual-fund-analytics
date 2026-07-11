@@ -141,6 +141,53 @@ bluestock_mf_capstone/
 - Market Trend Analysis
 
 ---
+## Exploratory Data Analysis (EDA)
+
+The project includes comprehensive Exploratory Data Analysis (EDA) on mutual fund industry data using Python, Pandas, Matplotlib, Seaborn, and Plotly.
+
+### EDA Highlights
+
+- Daily NAV trend analysis for all mutual fund schemes (2022–2026)
+- AUM growth comparison across major fund houses
+- Monthly SIP inflow trend analysis
+- Category-wise inflow heatmap
+- Investor demographics analysis
+  - Age group distribution
+  - Gender distribution
+  - SIP amount by age group
+- Geographic investment distribution
+  - State-wise SIP investments
+  - T30 vs B30 city comparison
+- Folio count growth analysis
+- NAV return correlation matrix for selected funds
+- Sector allocation analysis using portfolio holdings
+- 10+ business insights documented in Jupyter Notebook
+
+### Visualizations
+
+The project contains 15+ charts including:
+
+- NAV Trend
+- AUM Growth
+- SIP Trend
+- Category Heatmap
+- State Distribution
+- Gender Distribution
+- Age Group Distribution
+- SIP Amount Boxplot
+- Folio Growth
+- Correlation Matrix
+- Sector Allocation Donut
+- Benchmark Comparison
+- Benchmark Trend
+- Return Distribution
+- Top Fund Houses
+
+All exported visualizations are available in:
+
+```
+reports/charts/
+```
 
 ## Advanced Analytics
 
