@@ -1,0 +1,12 @@
+# Ignore SQLite database files
+*.db
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code settings
+.vscode/
