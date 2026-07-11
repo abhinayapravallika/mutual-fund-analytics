@@ -77,7 +77,6 @@ bluestock_mf_capstone/
 │   ├── Final_Report.pdf
 │   └── Presentation.pptx
 │
-├── reports/
 ├── .gitignore
 ├── validate_amfi.py
 ├── requirements.txt
